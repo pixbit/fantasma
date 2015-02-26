@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "prism": "https://github.com/PrismJS/prism.git#gh-pages"
+    "prism": "https://github.com/PrismJS/prism.git#gh-pages",
+    "ResponsiveMultiLevelMenu": "git@github.com:codrops/ResponsiveMultiLevelMenu.git"
   }
 }

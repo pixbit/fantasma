@@ -9,6 +9,7 @@ module.exports = function(grunt) {
      */
     assets: {
       prism: 'assets/_components/prism'
+      ,responsive_menu: 'assets/_components/ResponsiveMultiLevelMenu'
       ,sass: 'assets/sass'
       ,css: 'assets/css'
       ,js: 'assets/js'
@@ -68,6 +69,16 @@ module.exports = function(grunt) {
       ,prism_line_highlight: {
         src: "<%= assets.prism %>/plugins/line-highlight/prism-line-highlight.css",
         dest: "<%= assets.css %>/prism-line-highlight.css"
+      }
+
+      ,responsive_menu_css: {
+        src: "<%= assets.responsive_menu %>/css/component.css",
+        dest: "<%= assets.css %>/responsive-menu-component.css"
+      }
+
+      ,responsive_menu_jss: {
+        src: "<%= assets.responsive_menu %>/js/jquery.dlmenu.js",
+        dest: "<%= assets.js %>/jquery.responsive-menu.js"
       }
     } // copy
 
