@@ -20,7 +20,8 @@ module.exports = function(grunt) {
           style: 'compact'
         },
         files: {
-           'papercraft.css' : '<%= project.sass %>/papercraft.scss'
+           '<%= assets.css %>/screen.css' : '<%= assets.sass %>/screen.scss'
+           ,'<%= assets.css %>/prism-custom.css' : '<%= assets.sass %>/prism-custom.scss'
         }
       }
     }
@@ -108,7 +109,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('default', [
-    // 'sass'
+    'sass'
     // ,'concat'
     // ,'watch'
   ]);

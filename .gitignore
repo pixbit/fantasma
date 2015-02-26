@@ -23,3 +23,5 @@ projectFilesBackup
 # Packages
 node_modules/*
 assets/_components/*
+
+.sass-cache
