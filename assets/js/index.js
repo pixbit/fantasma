@@ -66,6 +66,8 @@
           filename.insertAfter(p_tag);
           p_tag.remove();
         });
+
+        $('#dl-menu').dlmenu();
     });
 
     // smartresize
