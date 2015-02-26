@@ -76,9 +76,14 @@ module.exports = function(grunt) {
         dest: "<%= assets.css %>/responsive-menu-component.css"
       }
 
-      ,responsive_menu_jss: {
+      ,responsive_menu_js: {
         src: "<%= assets.responsive_menu %>/js/jquery.dlmenu.js",
         dest: "<%= assets.js %>/jquery.responsive-menu.js"
+      }
+
+      ,responsive_menu_modernizr_js: {
+        src: "<%= assets.responsive_menu %>/js/modernizr.custom.js",
+        dest: "<%= assets.js %>/modernizr.custom.js"
       }
     } // copy
 
