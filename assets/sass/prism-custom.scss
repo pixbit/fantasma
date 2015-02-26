@@ -1,0 +1,115 @@
+$terminal_green: #00FF12;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-size: 80%;
+  max-width: 100%;
+  word-wrap: break-word; // allow wrapping within content blocks
+  word-break: break-word; // allow wrapping within content blocks
+  white-space: pre-wrap; // prevent wrapping mid-word within content blocks
+}
+
+pre[class*="language-"] code[class*="language-"] {
+  font-size: inherit;
+  word-wrap: normal; // prohibit wrapping within code blocks; scroll x overflow
+  word-break: normal; // prohibit wrapping within code blocks; scroll x overflow
+  white-space: pre; // prohibit wrapping within code blocks; scroll x overflow
+}
+
+pre[class*="language-"] {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+code.language-bash {
+  color: $terminal_green;
+  text-shadow: none;
+}
+
+pre.language-bash {
+  background: black;
+
+  .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string{
+    background: none;
+  }
+
+}
+
+pre.language-jade {
+    background: #00A86B;
+}
+
+pre.language-jade, code.language-jade {
+  text-shadow: none;
+
+  .token.comment, .token.prolog, .token.doctype, .token.cdata{
+      color: #05EDFF;
+  }
+
+  .token.atrule, .token.attr-value, .token.keyword{
+      color: #05EDFF;
+  }
+
+  .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted{
+      color: #ECD700;
+  }
+
+  .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted{
+      color: black;
+  }
+
+  .token.punctuation{
+      color: white;
+  }
+
+  .line-numbers .line-numbers-rows{
+      border-right: 1px solid #FFF;
+  }
+
+  .line-numbers-rows>span:before{
+      color: white;
+  }
+
+}
+
+pre.language-javascript {
+    background: #2C3E50;
+}
+
+pre.language-javascript, code.language-javascript{
+    text-shadow: none;
+    color: #2980B9;
+
+    .token.atrule, .token.attr-value, .token.keyword{
+          color: #E74C3C;
+      }
+
+    .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string{
+        background: none;
+        color: #ECF0F1;
+    }
+
+    .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted{
+        color: #3498DB;
+    }
+
+    .token.punctuation{
+        color: #ECF0F1;
+    }
+
+    .line-numbers .line-numbers-rows{
+        border-right: 1px solid #FFF;
+    }
+
+    .line-numbers-rows>span:before{
+        color: #ECF0F1;
+    }
+}
+
+.line-highlight {
+  background: rgba(255, 240, 0, 0.2) !important;
+}
+
+pre.line-numbers>code{
+  overflow: visible !important;
+}

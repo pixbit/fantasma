@@ -1,3 +1,37 @@
+code[class*="language-"], pre[class*="language-"] { font-size: 80%; max-width: 100%; word-wrap: break-word; word-break: break-word; white-space: pre-wrap; }
 
+pre[class*="language-"] code[class*="language-"] { font-size: inherit; word-wrap: normal; word-break: normal; white-space: pre; }
+
+pre[class*="language-"] { margin-bottom: 30px; margin-top: 0; }
+
+code.language-bash { color: #00FF12; text-shadow: none; }
+
+pre.language-bash { background: black; }
+pre.language-bash .token.operator, pre.language-bash .token.entity, pre.language-bash .token.url, pre.language-bash .language-css .token.string, pre.language-bash .style .token.string { background: none; }
+
+pre.language-jade { background: #00A86B; }
+
+pre.language-jade, code.language-jade { text-shadow: none; }
+pre.language-jade .token.comment, pre.language-jade .token.prolog, pre.language-jade .token.doctype, pre.language-jade .token.cdata, code.language-jade .token.comment, code.language-jade .token.prolog, code.language-jade .token.doctype, code.language-jade .token.cdata { color: #05EDFF; }
+pre.language-jade .token.atrule, pre.language-jade .token.attr-value, pre.language-jade .token.keyword, code.language-jade .token.atrule, code.language-jade .token.attr-value, code.language-jade .token.keyword { color: #05EDFF; }
+pre.language-jade .token.property, pre.language-jade .token.tag, pre.language-jade .token.boolean, pre.language-jade .token.number, pre.language-jade .token.constant, pre.language-jade .token.symbol, pre.language-jade .token.deleted, code.language-jade .token.property, code.language-jade .token.tag, code.language-jade .token.boolean, code.language-jade .token.number, code.language-jade .token.constant, code.language-jade .token.symbol, code.language-jade .token.deleted { color: #ECD700; }
+pre.language-jade .token.selector, pre.language-jade .token.attr-name, pre.language-jade .token.string, pre.language-jade .token.char, pre.language-jade .token.builtin, pre.language-jade .token.inserted, code.language-jade .token.selector, code.language-jade .token.attr-name, code.language-jade .token.string, code.language-jade .token.char, code.language-jade .token.builtin, code.language-jade .token.inserted { color: black; }
+pre.language-jade .token.punctuation, code.language-jade .token.punctuation { color: white; }
+pre.language-jade .line-numbers .line-numbers-rows, code.language-jade .line-numbers .line-numbers-rows { border-right: 1px solid #FFF; }
+pre.language-jade .line-numbers-rows > span:before, code.language-jade .line-numbers-rows > span:before { color: white; }
+
+pre.language-javascript { background: #2C3E50; }
+
+pre.language-javascript, code.language-javascript { text-shadow: none; color: #2980B9; }
+pre.language-javascript .token.atrule, pre.language-javascript .token.attr-value, pre.language-javascript .token.keyword, code.language-javascript .token.atrule, code.language-javascript .token.attr-value, code.language-javascript .token.keyword { color: #E74C3C; }
+pre.language-javascript .token.operator, pre.language-javascript .token.entity, pre.language-javascript .token.url, pre.language-javascript .language-css .token.string, pre.language-javascript .style .token.string, code.language-javascript .token.operator, code.language-javascript .token.entity, code.language-javascript .token.url, code.language-javascript .language-css .token.string, code.language-javascript .style .token.string { background: none; color: #ECF0F1; }
+pre.language-javascript .token.selector, pre.language-javascript .token.attr-name, pre.language-javascript .token.string, pre.language-javascript .token.char, pre.language-javascript .token.builtin, pre.language-javascript .token.inserted, code.language-javascript .token.selector, code.language-javascript .token.attr-name, code.language-javascript .token.string, code.language-javascript .token.char, code.language-javascript .token.builtin, code.language-javascript .token.inserted { color: #3498DB; }
+pre.language-javascript .token.punctuation, code.language-javascript .token.punctuation { color: #ECF0F1; }
+pre.language-javascript .line-numbers .line-numbers-rows, code.language-javascript .line-numbers .line-numbers-rows { border-right: 1px solid #FFF; }
+pre.language-javascript .line-numbers-rows > span:before, code.language-javascript .line-numbers-rows > span:before { color: #ECF0F1; }
+
+.line-highlight { background: rgba(255, 240, 0, 0.2) !important; }
+
+pre.line-numbers > code { overflow: visible !important; }
 
 /*# sourceMappingURL=prism-custom.css.map */
