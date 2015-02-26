@@ -1,0 +1,13 @@
+{
+  "name": "fantasma",
+  "version": "1.0.0",
+  "homepage": "https://github.com/pixbit/fantasma",
+  "authors": [
+    "Edwin Estrada <edwin@thinkpixbit.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prism": "https://github.com/PrismJS/prism.git#gh-pages"
+  }
+}
