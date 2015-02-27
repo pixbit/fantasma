@@ -34,6 +34,6 @@ pre.language-javascript .line-numbers-rows > span:before, code.language-javascri
 
 pre.line-numbers > code { overflow: visible !important; }
 
-span.filename { font: normal 20px/1.6 "Open Sans"; color: black; background: #CCC; text-align: center; width: 100%; display: block; }
+span.filename { font: normal 20px/1.6 'Whitney A'; color: black; background: #CCC; text-align: center; width: 100%; display: block; }
 
 /*# sourceMappingURL=prism-custom.css.map */
