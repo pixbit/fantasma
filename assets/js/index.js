@@ -68,6 +68,8 @@
         });
 
         $('#dl-menu').dlmenu();
+
+        $('#dl-menu ul').children().each(function(i,li){$('#dl-menu ul').prepend(li)});
     });
 
     // smartresize
