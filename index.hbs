@@ -10,11 +10,16 @@
           <button class="dl-trigger">Open Menu</button>
           <ul class="dl-menu">
             {{! This is the post loop - each post will be output using this markup }}
-            {{#foreach posts}}
-              <li>
-                <a href="{{url}}">{{{title}}}</a>
-              </li>
-            {{/foreach}}
+            <li><a href='#'>Building Angular.js + Node + MEAN</a>
+            <li><a href='#'>All posts</a>
+              <ul class="dl-submenu">
+              {{#foreach posts}}
+                <li>
+                  <a href="{{url}}">{{{title}}}</a>
+                </li>
+              {{/foreach}}
+              </ul>
+            </li>
               <!-- <li><a href="#">Top Level</a>
                 <ul class="dl-submenu">
                   <li><a href="#">Men</a>
