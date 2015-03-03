@@ -117,7 +117,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", 'Whitney A','Whitney B', sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -203,7 +203,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Whitney A','Whitney B', sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -662,7 +662,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Whitney A','Whitney B', sans-serif;
     color: #fff;
 }
 
@@ -763,7 +763,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Whitney A','Whitney B', sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1211,7 +1211,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Whitney A','Whitney B', sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1296,7 +1296,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Whitney A','Whitney B', sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
