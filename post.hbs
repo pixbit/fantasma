@@ -13,6 +13,12 @@
     <div id="dl-menu" class="dl-menuwrapper">
       <button class="dl-trigger">Open Menu</button>
       <ul class="dl-menu">
+        {{! This is the post loop - each post will be output using this markup }}
+        {{#foreach posts}}
+          <li>
+            <a href="{{url}}">{{{title}}}</a>
+          </li>
+        {{/foreach}}
             <li>
               <a href="#">Fashion</a>
               <ul class="dl-submenu">
@@ -110,7 +116,7 @@
               </ul>
             </li>
           </ul>
-    </div><!-- /dl-menuwrapper -->  
+    </div><!-- /dl-menuwrapper -->
   </nav>
 </header>
 
