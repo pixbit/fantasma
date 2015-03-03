@@ -6,6 +6,31 @@
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        <div id="dl-menu" class="dl-menuwrapper">
+          <button class="dl-trigger">Open Menu</button>
+          <ul class="dl-menu">
+            {{! This is the post loop - each post will be output using this markup }}
+            {{#foreach posts}}
+              <li>
+                <a href="{{url}}">{{{title}}}</a>
+              </li>
+            {{/foreach}}
+              <li><a href="#">Top Level</a>
+                <ul class="dl-submenu">
+                  <li><a href="#">Men</a>
+                    <ul class="dl-submenu">
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Chinos &amp; Trousers</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">T-Shirts</a></li>
+                      <li><a href="#">Underwear</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </div><!-- /dl-menuwrapper -->
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
