@@ -52,7 +52,12 @@ module.exports = function(grunt) {
 
 
     ,copy: {
-      prism_css: {
+      prism_js: {
+        src: "<%= assets.prism %>/prism.js",
+        dest: "<%= assets.js %>/prism.js"
+      }
+
+      ,prism_css: {
         src: "<%= assets.prism %>/themes/prism.css",
         dest: "<%= assets.css %>/prism.css"
       }
