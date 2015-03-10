@@ -1,4 +1,5 @@
 .menuzord { background: none; }
+.menuzord h1, .menuzord h2, .menuzord h3, .menuzord h4, .menuzord h5, .menuzord h6 { color: white; }
 
 .menuzord-menu > li > .megamenu { border-top: none; background: black; }
 
