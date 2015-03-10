@@ -10,6 +10,7 @@ module.exports = function(grunt) {
     assets: {
       prism: 'assets/_components/prism'
       ,responsive_menu: 'assets/_components/ResponsiveMultiLevelMenu'
+      ,menuzord: 'assets/_components/menuzord'
       ,sass: 'assets/sass'
       ,css: 'assets/css'
       ,fonts: 'assets/fonts'
@@ -119,6 +120,16 @@ module.exports = function(grunt) {
       ,responsive_menu_modernizr_js: {
         src: "<%= assets.responsive_menu %>/js/modernizr.custom.js",
         dest: "<%= assets.js %>/modernizr.custom.js"
+      }
+
+      ,menuzord_css: {
+        src: "<%= assets.menuzord %>/css/menuzord.css",
+        dest: "<%= assets.css %>/menuzord.css"
+      }
+
+      ,menuzord_js: {
+        src: "<%= assets.menuzord %>/js/menuzord.js",
+        dest: "<%= assets.js %>/menuzord.js"
       }
     } // copy
 
