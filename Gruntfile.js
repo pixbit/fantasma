@@ -26,6 +26,7 @@ module.exports = function(grunt) {
            '<%= assets.css %>/screen.css' : '<%= assets.sass %>/screen.scss'
            ,'<%= assets.css %>/prism-custom.css' : '<%= assets.sass %>/prism-custom.scss'
            ,'<%= assets.css %>/responsive-menu-custom.css' : '<%= assets.sass %>/responsive-menu-custom.scss'
+           ,'<%= assets.css %>/menuzord-custom.css' : '<%= assets.sass %>/menuzord-custom.scss'
         }
       }
     }

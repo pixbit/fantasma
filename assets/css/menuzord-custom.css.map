@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,SAAS,GACP,UAAU,EAAE,IAAI",
+"sources": ["../sass/menuzord-custom.scss"],
+"names": [],
+"file": "menuzord-custom.css"
+}
