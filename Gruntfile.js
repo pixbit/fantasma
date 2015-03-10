@@ -9,7 +9,6 @@ module.exports = function(grunt) {
      */
     assets: {
       prism: 'assets/_components/prism'
-      ,responsive_menu: 'assets/_components/ResponsiveMultiLevelMenu'
       ,menuzord: 'assets/_components/menuzord'
       ,sass: 'assets/sass'
       ,css: 'assets/css'
@@ -25,7 +24,6 @@ module.exports = function(grunt) {
         files: {
            '<%= assets.css %>/screen.css' : '<%= assets.sass %>/screen.scss'
            ,'<%= assets.css %>/prism-custom.css' : '<%= assets.sass %>/prism-custom.scss'
-           ,'<%= assets.css %>/responsive-menu-custom.css' : '<%= assets.sass %>/responsive-menu-custom.scss'
            ,'<%= assets.css %>/menuzord-custom.css' : '<%= assets.sass %>/menuzord-custom.scss'
         }
       }
@@ -98,29 +96,6 @@ module.exports = function(grunt) {
       ,prism_line_highlight: {
         src: "<%= assets.prism %>/plugins/line-highlight/prism-line-highlight.css",
         dest: "<%= assets.css %>/prism-line-highlight.css"
-      }
-
-      ,responsive_menu_css: {
-        src: "<%= assets.responsive_menu %>/css/component.css",
-        dest: "<%= assets.css %>/responsive-menu-component.css"
-      }
-
-      ,responsive_menu_fonts: {
-        expand: true,
-        flatten: true,
-        src: "<%= assets.responsive_menu %>/fonts/*",
-        dest: "<%= assets.fonts %>/",
-        filter: 'isFile'
-      }
-
-      ,responsive_menu_js: {
-        src: "<%= assets.responsive_menu %>/js/jquery.dlmenu.js",
-        dest: "<%= assets.js %>/jquery.responsive-menu.js"
-      }
-
-      ,responsive_menu_modernizr_js: {
-        src: "<%= assets.responsive_menu %>/js/modernizr.custom.js",
-        dest: "<%= assets.js %>/modernizr.custom.js"
       }
 
       ,menuzord_css: {
