@@ -4,15 +4,27 @@
 {{! The big featured header }}
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-
         <div id="menuzord" class="menuzord">
           <ul class="menuzord-menu">
+            {{#if @blog.logo}}<li><a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></li>{{/if}}
             <li><a href='#'>Latest posts</a>
               <div class="megamenu">
                 <div class="megamenu-row">
-                  <ul class="dl-submenu">
+                  <figure class="effect-bubba">
+                    <img src="/content/images/2015/03/wooden_floor.jpg">
+                    <figcaption>
+                      <h2>Fresh <span>Bubba</span></h2>
+                      <p>Bubba likes to appear out of thin air.</p>
+                      <a href="#">View more</a>
+                    </figcaption>
+                  </figure>
+                </div><!-- .megamenu-row -->
+              </div><!-- .megamenu -->
+            </li>
+            <li><a href='#'>Latest posts</a>
+              <div class="megamenu">
+                <div class="megamenu-row">
+                  <ul>
                   {{#foreach posts}}
                     <li>
                       <a href="{{url}}">{{{title}}}</a>
@@ -155,13 +167,6 @@
             </li>
           </ul>
         </div>
-
-
-        <div id="dl-menu" class="dl-menuwrapper">
-          <ul class="dl-menu">
-            <li><a href='#'></a></li>
-          </ul>
-        </div><!-- /dl-menuwrapper -->
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">

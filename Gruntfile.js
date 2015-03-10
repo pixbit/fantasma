@@ -10,6 +10,7 @@ module.exports = function(grunt) {
     assets: {
       prism: 'assets/_components/prism'
       ,menuzord: 'assets/_components/menuzord'
+      ,hovereffects: 'assets/_components/HoverEffectIdeas'
       ,sass: 'assets/sass'
       ,css: 'assets/css'
       ,fonts: 'assets/fonts'
@@ -106,6 +107,11 @@ module.exports = function(grunt) {
       ,menuzord_js: {
         src: "<%= assets.menuzord %>/js/menuzord.js",
         dest: "<%= assets.js %>/menuzord.js"
+      }
+
+      ,hovereffects_css: {
+        src: "<%= assets.hovereffects %>/css/set1.css",
+        dest: "<%= assets.css %>/hovereffects.css"
       }
     } // copy
 
