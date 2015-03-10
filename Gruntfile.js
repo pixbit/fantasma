@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         flatten: true,
         src: [
           "<%= assets.prism %>/plugins/autolinker/prism-autolinker.js"
-          ,"<%= assets.prism %>/plugins/line-number/prism-line-number.js"
+          ,"<%= assets.prism %>/plugins/line-numbers/prism-line-numbers.js"
           ,"<%= assets.prism %>/plugins/line-highlight/prism-line-highlight.js"
         ],
         dest: "<%= assets.js %>/prism/",
