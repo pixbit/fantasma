@@ -12,6 +12,7 @@ module.exports = function(grunt) {
       ,responsive_menu: 'assets/_components/ResponsiveMultiLevelMenu'
       ,sass: 'assets/sass'
       ,css: 'assets/css'
+      ,fonts: 'assets/fonts'
       ,js: 'assets/js'
     }
 
@@ -100,6 +101,14 @@ module.exports = function(grunt) {
       ,responsive_menu_css: {
         src: "<%= assets.responsive_menu %>/css/component.css",
         dest: "<%= assets.css %>/responsive-menu-component.css"
+      }
+
+      ,responsive_menu_fonts: {
+        expand: true,
+        flatten: true,
+        src: "<%= assets.responsive_menu %>/fonts/*",
+        dest: "<%= assets.fonts %>/",
+        filter: 'isFile'
       }
 
       ,responsive_menu_js: {
