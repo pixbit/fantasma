@@ -58,8 +58,23 @@ module.exports = function(grunt) {
       }
 
       ,prism_components_js: {
+        expand: true,
+        flatten: true,
         src: ["<%= assets.prism %>/components/*"],
-        dest: "<%= assets.js %>/prism/"
+        dest: "<%= assets.js %>/prism/",
+        filter: 'isFile'
+      }
+
+      ,prism_plugins_js: {
+        expand: true,
+        flatten: true,
+        src: [
+          "<%= assets.prism %>/plugins/autolinker/prism-autolinker.js"
+          ,"<%= assets.prism %>/plugins/line-number/prism-line-number.js"
+          ,"<%= assets.prism %>/plugins/line-highlight/prism-line-highlight.js"
+        ],
+        dest: "<%= assets.js %>/prism/",
+        filter: 'isFile'
       }
 
       ,prism_css: {
