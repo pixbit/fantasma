@@ -1,3 +1,5 @@
 .menuzord { background: none; }
 
+.menuzord-menu > li > .megamenu { border-top: none; background: black; }
+
 /*# sourceMappingURL=menuzord-custom.css.map */
