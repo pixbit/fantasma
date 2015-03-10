@@ -67,8 +67,6 @@
           p_tag.remove();
         });
 
-        $('#dl-menu').dlmenu();
-
         $('#menuzord').menuzord();
     });
 
