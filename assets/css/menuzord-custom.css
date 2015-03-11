@@ -1,7 +1,9 @@
 .menuzord { background: none; }
-.menuzord h1, .menuzord h2, .menuzord h3, .menuzord h4, .menuzord h5, .menuzord h6, .menuzord ul, .menuzord li { color: white; text-align: left; font-family: 'Whitney A', 'Whitney B', sans-serif; }
+.menuzord h1, .menuzord h2, .menuzord h3, .menuzord h4, .menuzord h5, .menuzord h6, .menuzord ul, .menuzord li { color: white; text-align: left; }
 .menuzord h3 { color: black; background: white; text-transform: uppercase; margin: 0; }
 .menuzord a:hover { color: black; background: white; }
+
+.menuzord, .menuzord *, .menuzord-menu > li.search form input[type="text"] { font-family: 'Whitney A', 'Whitney B', sans-serif; }
 
 .menuzord-menu > li > .megamenu { border-top: none; background: black; }
 

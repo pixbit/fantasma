@@ -5,7 +5,6 @@ $pixbit_blue : #2EACFF;
   h1, h2, h3, h4, h5, h6, ul, li{
     color: white;
     text-align: left;
-    font-family: 'Whitney A', 'Whitney B', sans-serif;
   }
   h3{
     color: black;
@@ -17,6 +16,12 @@ $pixbit_blue : #2EACFF;
     color: black;
     background: white;
   }
+}
+
+.menuzord,
+.menuzord *,
+.menuzord-menu > li.search form input[type="text"] {
+  font-family: 'Whitney A', 'Whitney B', sans-serif;
 }
 
 .menuzord-menu > li > .megamenu {
