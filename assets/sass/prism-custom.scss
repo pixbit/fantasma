@@ -33,6 +33,10 @@ pre.language-bash {
     background: none;
   }
 
+  .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted{
+    color: #F00;
+  }
+
 }
 
 pre.language-jade {

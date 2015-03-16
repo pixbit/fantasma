@@ -8,6 +8,7 @@ code.language-bash { color: #00FF12; text-shadow: none; }
 
 pre.language-bash { background: black; }
 pre.language-bash .token.operator, pre.language-bash .token.entity, pre.language-bash .token.url, pre.language-bash .language-css .token.string, pre.language-bash .style .token.string { background: none; }
+pre.language-bash .token.property, pre.language-bash .token.tag, pre.language-bash .token.boolean, pre.language-bash .token.number, pre.language-bash .token.constant, pre.language-bash .token.symbol, pre.language-bash .token.deleted { color: #F00; }
 
 pre.language-jade { background: #00A86B; }
 
