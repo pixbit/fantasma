@@ -1,8 +1,10 @@
-code[class*="language-"], pre[class*="language-"] { font-size: 80%; max-width: 100%; word-wrap: break-word; word-break: break-word; white-space: pre-wrap; }
+pre { background-color: black; }
+
+code[class*="language-"], pre[class*="language-"] { margin-top: 0; font-size: 80%; max-width: 100%; word-wrap: break-word; word-break: break-word; white-space: pre-wrap; }
 
 pre[class*="language-"] code[class*="language-"] { font-size: inherit; word-wrap: normal; word-break: normal; white-space: pre; }
 
-pre[class*="language-"] { margin-bottom: 30px; margin-top: 0; }
+pre[class*="language-bash"] { margin-bottom: 30px; margin-top: 0; }
 
 code.language-bash { color: #00FF12; text-shadow: none; }
 

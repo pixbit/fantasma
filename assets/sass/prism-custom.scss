@@ -1,7 +1,12 @@
 $terminal_green: #00FF12;
 
+pre{
+  background-color: black;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
+  margin-top: 0;
   font-size: 80%;
   max-width: 100%;
   word-wrap: break-word; // allow wrapping within content blocks
@@ -16,7 +21,7 @@ pre[class*="language-"] code[class*="language-"] {
   white-space: pre; // prohibit wrapping within code blocks; scroll x overflow
 }
 
-pre[class*="language-"] {
+pre[class*="language-bash"] {
   margin-bottom: 30px;
   margin-top: 0;
 }
