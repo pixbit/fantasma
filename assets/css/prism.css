@@ -15,7 +15,7 @@ pre[class*="language-"] {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.5;
+	line-height: 21px;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -152,9 +152,9 @@ pre[data-line] {
 	background: -webkit-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
 	background: -o-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
 	background: linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	
+
 	pointer-events: none;
-	
+
 	line-height: inherit;
 	white-space: pre;
 }
@@ -169,14 +169,13 @@ pre[data-line] {
 		padding: 0 .5em;
 		background-color: hsla(24, 20%, 50%,.4);
 		color: hsl(24, 20%, 95%);
-		font: bold 65%/1.5 sans-serif;
 		text-align: center;
 		vertical-align: .3em;
 		border-radius: 999px;
 		text-shadow: none;
 		box-shadow: 0 1px white;
 	}
-	
+
 	.line-highlight[data-end]:after {
 		content: attr(data-end);
 		top: auto;
