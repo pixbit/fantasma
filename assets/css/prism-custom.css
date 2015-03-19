@@ -31,7 +31,7 @@ pre.language-javascript .token.punctuation, code.language-javascript .token.punc
 pre.language-javascript .line-numbers .line-numbers-rows, code.language-javascript .line-numbers .line-numbers-rows { border-right: 1px solid #FFF; }
 pre.language-javascript .line-numbers-rows > span:before, code.language-javascript .line-numbers-rows > span:before { color: #ECF0F1; }
 
-.line-highlight { background: rgba(255, 240, 0, 0.2) !important; margin-top: 0.5em !important; }
+.line-highlight { background: rgba(255, 240, 0, 0.2) !important; }
 
 pre.line-numbers > code { overflow: visible !important; }
 
