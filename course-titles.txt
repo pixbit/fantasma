@@ -1,4 +1,3 @@
-AngularJS Architecture: Series Introduction
 AngularJS Architecture: File Structure
 AngularJS Architecture: Using Sub-Modules
 AngularJS Architecture: Basic State with ui-router
