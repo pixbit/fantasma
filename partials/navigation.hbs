@@ -3,30 +3,7 @@
         <div id="menuzord" class="menuzord">
           <ul class="menuzord-menu">
             {{#if @blog.logo}}<li><a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></li>{{/if}}
-            <li><a href='#'>Clients</a>
-              <div class="megamenu">
-                <div class="megamenu-row">
-                  <div class="grid">
-                    <figure class="effect-bubba">
-                      <img src="/content/images/2015/03/dale-lari-bus.jpg">
-                      <figcaption>
-                        <h2>Dale Lari</h2>
-                        <p>A Global Soccer Project</p>
-                        <a href="/dale-lari-a-global-soccer-project/">Explore</a>
-                      </figcaption>
-                    </figure>
-                    <figure class="effect-bubba">
-                      <img src="/content/images/2015/03/jose-and-sons-logo-sketch.png">
-                      <figcaption>
-                        <h2>Jose and Sons</h2>
-                        <p>Branding</p>
-                        <a target="_blank" href="https://medium.com/@iamsaul_/rebranding-jose-sons-3fc3d844fc05">Explore</a>
-                      </figcaption>
-                    </figure>
-                  </div><!-- .grid -->
-                </div><!-- .megamenu-row -->
-              </div><!-- .megamenu -->
-            </li>
+            {{> "clients"}}
             <li><a href='#'>Latest posts</a>
               <div class="megamenu">
                 <div class="megamenu-row">
