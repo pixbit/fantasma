@@ -1,0 +1,13 @@
+<li><a href='#'>Latest posts</a>
+  <div class="megamenu">
+    <div class="megamenu-row">
+      <ul>
+      {{#foreach posts}}
+        <li>
+          <a href="{{url}}">{{{title}}}</a>
+        </li>
+      {{/foreach}}
+      </ul>
+    </div><!-- .megamenu-row -->
+  </div><!-- .megamenu -->
+</li>
