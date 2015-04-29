@@ -119,32 +119,42 @@ module.exports = function(grunt) {
 
       sass: {
         files: [
-          '<%= project.theme_css %>/*.scss'
+          '**/*/*.scss'
         ],
         tasks: [
-          'sass',
-          'concat:all_css'
+          'sass'//,
+          // 'concat:all_css'
         ],
         options: {
-          livereload: true
+          livereload: 35729
         }
       }
 
-      ,js:{
+      ,hbs: {
         files: [
-          '<%= project.theme_js %>/minimal-playbook.js'
+          '**/*/*.hbs'
         ],
-        tasks: [
-          'concat:all_js'
-        ]
+        options: {
+          livereload: 35729
+        }
       }
+
+      // ,js:{
+      //   files: [
+      //     '<%= project.theme_js %>/minimal-playbook.js'
+      //   ],
+      //   tasks: [
+      //     'concat:all_js'
+      //   ]
+      // }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-copy'); // npm install grunt-contrib-copy --save-dev
-  grunt.loadNpmTasks('grunt-contrib-sass'); // npm install grunt-contrib-sass --save-dev
-  grunt.loadNpmTasks('grunt-contrib-watch'); // npm install grunt-contrib-watch --save-dev
-  grunt.loadNpmTasks('grunt-contrib-concat'); // npm install grunt-contrib-concat --save-dev
+  grunt.loadNpmTasks('grunt-contrib-livereload');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('setup', [
     'copy'
@@ -155,6 +165,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'sass'
     // ,'concat'
-    // ,'watch'
+    ,'watch'
   ]);
 }

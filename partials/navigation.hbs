@@ -15,6 +15,9 @@
             {{> "navigation/development"}}
           </ul>
         </div>
+        <div class="current">
+          {{> "current"}}
+        </div>
     </nav>
     {{#is "home"}}
     <div class="vertical">
@@ -23,6 +26,6 @@
             <h2 class="page-description">{{@blog.description}}</h2>
         </div>
     </div>
-    {{/is}}
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    {{/is}}
 </header>
